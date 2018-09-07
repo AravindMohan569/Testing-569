@@ -5,11 +5,23 @@ pipelineJob('Repo-1') {
             scm {
                 branchSources{
                     git{
-                        remote {
-                        credentials('gitlogin')
-                        url('https://github.com/AravindMohan569/DemoRepo.git')
-                        }
-                    includes('master-*')
+
+                        branch('*/master')
+                        extensions {
+                          localBranch('master')
+                                 }
+                          remote {
+                         credentials('gitlogin')
+                             url('https://github.com/AravindMohan569/DemoRepo.git')
+                            }
+
+
+                        
+                    //     remote {
+                    //     credentials('gitlogin')
+                    //     url('https://github.com/AravindMohan569/DemoRepo.git')
+                    //     }
+                    // includes('master-*')
                     }
                 }
             }
