@@ -5,11 +5,22 @@ pipelineJob('Repo-2') {
             scm {
                 branchSources{
                     git{
-                        remote {
-                        credentials('gitlogin')
-                        url('https://github.com/AravindMohan569/Testing-Git-Excersice.git')
-                        }
-                    includes('master-*')
+
+
+                        branch('*/master')
+                        extensions {
+                          localBranch('master')
+                                 }
+                          remote {
+                         credentials('gitlogin')
+                             url('https://github.com/AravindMohan569/Testing-Git-Excersice.git')
+                            }
+
+                    //     remote {
+                    //     credentials('gitlogin')
+                    //     url('https://github.com/AravindMohan569/Testing-Git-Excersice.git')
+                    //     }
+                    // includes('master-*')
                     }
                 }
             }
