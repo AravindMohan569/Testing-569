@@ -6,7 +6,7 @@ PipelineJob('Repo-2') {
                 branchSources{
                     git{
                         remote {
-                        credentials('gitlogin')
+                        //credentials('gitlogin')
                         url('https://github.com/AravindMohan569/Testing-Git-Excersice.git')
                         }
                     includes('master-*')
