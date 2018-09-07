@@ -1,7 +1,7 @@
 pipelineJob('Repo-1') {
     definition {
         cpsScm {
-            lightweight(true)
+            
             scm {
                 branchSources{
                     git{
