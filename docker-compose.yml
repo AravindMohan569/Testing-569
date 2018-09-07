@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  advanced-dockermon:
+    build: .
+    image: advancedcsg-docker-release-virtual.jfrog.io/advanced/dockermon
+    cap_add:
+      - ALL
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock

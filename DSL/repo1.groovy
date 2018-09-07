@@ -1,4 +1,4 @@
-multibranchPipelineJob('Repo-1') {
+PipelineJob('Repo-1') {
     definition {
         cpsScm {
             lightweight(true)

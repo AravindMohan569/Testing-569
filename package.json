@@ -1,0 +1,27 @@
+{
+  "name": "advanced-dockermon",
+  "version": "1.0.0",
+  "description": "Collect docker cotainer stats and push to CloudWatch Metrics",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo Not implemented"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git-codecommit.eu-west-2.amazonaws.com/v1/repos/advanced-dockermon"
+  },
+  "keywords": [
+    "docker",
+    "aws",
+    "cloudwatch"
+  ],
+  "author": "Advanced",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "colors": "^1.3.0"
+  }
+}
