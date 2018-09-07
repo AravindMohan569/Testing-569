@@ -6,7 +6,7 @@ PipelineJob('Repo-1') {
                 branchSources{
                     git{
                         remote {
-                        credentials('gitlogin')
+                        //credentials('gitlogin')
                         url('https://github.com/AravindMohan569/DemoRepo.git')
                         }
                     includes('master-*')
